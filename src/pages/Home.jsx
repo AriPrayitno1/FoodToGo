@@ -4,6 +4,7 @@ import Card from '../components/Card'
 
 const Home = () => {
   return (
+    <>
     <div className='bg-kedua'>
       <Banner bannerImg="./src/assets/banner/home.png"></Banner>
         <div className='px-20'>
@@ -29,12 +30,13 @@ const Home = () => {
 
                 <Card cardImg="./src/assets/layanan/daftar-menu/ayam-rendang.png" 
                 cardTitle="Ayam Goreng"></Card>
-                
-                <Card cardImg="./src/assets/layanan/daftar-menu/daging-sapi.png" 
-                cardTitle="Daging Sapi Lada Hitam></Card>
+
+                <Card cardImg="./src/assets/layanan/daftar-menu/ayam-rendang.png" 
+                cardTitle="Ayam Goreng"></Card>
               </div>
         </div>
     </div>
+    </>
   )
 }
 
