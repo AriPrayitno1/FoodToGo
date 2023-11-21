@@ -3,6 +3,7 @@ import Card2 from '../components/Card2'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Banner from '../components/Banner'
+import SearchBar from '../components/SearchBar'
 
 const ResultMenu = () => {
   return (
@@ -12,9 +13,7 @@ const ResultMenu = () => {
         <Banner bannerImg="./src/assets/banner/home.png"></Banner>
         <div className="px-20 py-12">
           <h1 className="text-white text-4xl text-center font-bold absolute top-36 inset-x-1/3 z-20">Daftar Menu</h1>
-          <h1 className="text-black text-2xl font-bold text-center">
-            Berikut beberapa contoh masakan kami:
-          </h1>
+          <SearchBar></SearchBar>
           <div className="grid grid-cols-5 gap-x-8 gap-y-8 justify-center pt-12">
             <Card2
               cardImg="./src/assets/layanan/daftar-menu/nasi-ayam-goreng.png"
