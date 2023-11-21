@@ -1,13 +1,18 @@
-import React from "react";
+import React from 'react'
 import Banner from "../components/Banner";
 import Card from "../components/Card";
+import Navbar from '../components/Navbar';
+import Footer from "../components/Footer"
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <>
+    <Navbar></Navbar>
       <div className="bg-kedua">
         <Banner bannerImg="./src/assets/banner/home.png"></Banner>
         <div className="px-20 py-12">
+          <h1 className="text-white text-4xl text-center font-bold absolute top-36 inset-x-1/3 z-20">Makanan Terbaik untuk Seleramu</h1>
           <h1 className="text-black text-2xl font-bold text-center">
             Daftar Menu
           </h1>
@@ -16,6 +21,7 @@ const Home = () => {
               cardImg="./src/assets/layanan/daftar-menu/nasi-ayam-goreng.png"
               cardTitle="Nasi Ayam Goreng"
             ></Card>
+            
 
             <Card
               cardImg="./src/assets/layanan/daftar-menu/ayam-gulai.png"
@@ -49,12 +55,12 @@ const Home = () => {
 
             <Card
               cardImg="./src/assets/layanan/daftar-menu/daging-sapi.png"
-              cardTitle="Daging Sapi"
+              cardTitle="Daging Sapi Lada Hitam"
             ></Card>
           </div>
 
           <div className="flex align-baseline justify-center text-black h-8 gap-1 mt-6">
-            <p className="font-bold">Lihat Semua</p>
+            <Link to="/menu" className="font-bold">Lihat Semua</Link>
             <img src="./src/assets/right-arrow.png" alt="" />
           </div>
         </div>
@@ -74,7 +80,7 @@ const Home = () => {
 
           <div className="grid grid-cols-3 gap-y-8 justify-items-center pt-12">
             <Card
-              cardImg="./src/assets/layanan/catering-prasmanan/catering-prasmanan.png"
+              cardImg="./src/assets/layanan/catering-prasmanan/img1.png"
               cardTitle="Catering Prasmanan"
             ></Card>
 
@@ -100,6 +106,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 };

@@ -1,14 +1,22 @@
-import Navbar from "./components/Navbar"
-import Home from "./pages/Home"
-import Footer from "./components/Footer"
+import Menu2 from './pages/Menu2'
+import Home from './pages/Home'
+import React from 'react'
+import Login from './pages/Login'
+import SignUp from './pages/SignUp'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
-    <>
-      <Navbar></Navbar>
-      <Home></Home>
-      <Footer></Footer>
-    </>
+      <Router>
+        <>
+          <Routes>
+            <Route exact path='/' element={<Home/>}></Route>
+            <Route path='/menu' element={<Menu2/>}></Route>
+            <Route path='/login' element={<Login/>}></Route>
+            <Route path='/signup' element={<SignUp/>}></Route>
+          </Routes>
+        </>
+      </Router>
   )
 }
 
