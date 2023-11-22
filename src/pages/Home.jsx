@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import Card from "../components/Card";
 import Navbar from '../components/Navbar';
 import Footer from "../components/Footer"
+import HelpBtn from '../components/HelpBtn';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -104,6 +105,10 @@ const Home = () => {
               cardTitle="Catering Biasa"
             ></Card>
           </div>
+        </div>
+
+        <div className='flex justify-end'>
+          <HelpBtn></HelpBtn>
         </div>
       </div>
       <Footer></Footer>

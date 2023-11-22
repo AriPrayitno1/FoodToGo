@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Banner from '../components/Banner'
 import SearchBar from '../components/SearchBar'
+import HelpBtn from '../components/HelpBtn'
 
 const ResultMenu = () => {
   return (
@@ -12,8 +13,10 @@ const ResultMenu = () => {
       <div className="bg-kedua">
         <Banner bannerImg="./src/assets/banner/home.png"></Banner>
         <div className="px-20 py-12">
-          <h1 className="text-white text-4xl text-center font-bold absolute top-36 inset-x-1/3 z-20">Daftar Menu</h1>
-          <SearchBar></SearchBar>
+          <h1 className="text-white text-4xl text-center font-bold absolute top-36 inset-x-1/3 z-20">Cari Menu</h1>
+          <div className='flex justify-center'>
+            <SearchBar></SearchBar>
+          </div>
           <div className="grid grid-cols-5 gap-x-8 gap-y-8 justify-center pt-12">
             <Card2
               cardImg="./src/assets/layanan/daftar-menu/nasi-ayam-goreng.png"
@@ -64,7 +67,13 @@ const ResultMenu = () => {
             ></Card2>
           </div>
           </div>
+
+          <div className='flex justify-end'>
+            <HelpBtn></HelpBtn>
+          </div>
         </div>
+        
+        
         <Footer></Footer>
     </>
   )

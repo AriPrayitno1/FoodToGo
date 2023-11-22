@@ -3,15 +3,16 @@ import Banner from "../components/Banner";
 import Card from "../components/Card";
 import Navbar from '../components/Navbar';
 import Footer from "../components/Footer"
+import HelpBtn from '../components/HelpBtn';
 
-const Menu = () => {
+const ListMenu = () => {
   return (
     <>
       <Navbar></Navbar>
       <div className="bg-kedua">
         <Banner bannerImg="./src/assets/banner/home.png"></Banner>
         <div className="px-20 py-12">
-          <h1 className="text-white text-4xl text-center font-bold absolute top-36 inset-x-1/3 z-20">Daftar Menu</h1>
+          <h1 className="text-white text-4xl text-center font-bold absolute top-36 inset-x-1/3 z-20">List Menu</h1>
           <h1 className="text-black text-2xl font-bold text-center">
             Berikut beberapa contoh masakan kami:
           </h1>
@@ -207,10 +208,14 @@ const Menu = () => {
             </div>
           </div>
         </div>
+
+        <div className='flex justify-end'>
+          <HelpBtn></HelpBtn>
+        </div>
       </div>
       <Footer></Footer>
     </>
   )
 }
 
-export default Menu
+export default ListMenu

@@ -2,6 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 const SignUp = () => {
+
+  const signUpBtn = () => {
+        <Link to="/"></Link>
+  }
+
   return (
     <>
       <div className="bg-kedua flex justify-center min-h-screen">
@@ -14,10 +19,10 @@ const SignUp = () => {
           <div className="flex flex-col mb-6">
               <h1 className="text-2xl font-bold mb-6">Sign Up</h1>
               <div className='flex justify-between'>
-                <input type="text" placeholder="Alamat Email" className="bg-white mb-4 border-solid border-2 
+                <input type="text" placeholder="Nama Depan" className="bg-white mb-4 border-solid border-2 
                 border-gray-300 p-2 rounded-md"/>
 
-                <input type="password" placeholder="Password" className="bg-white mb-4 border-solid border-2 
+                <input type="password" placeholder="Nama Belakang" className="bg-white mb-4 border-solid border-2 
                 border-gray-300 p-2 rounded-md"/>
               </div>
               <input type="text" placeholder="Alamat Email" className="bg-white mb-4 border-solid border-2 
@@ -43,8 +48,9 @@ const SignUp = () => {
               <p className="text-sm">Forgot Password</p>
             </div>
 
+
             <div className="mb-8">
-              <Link to='/home'><button className="w-full p-2 bg-blue-600 text-white rounded-md ">Sign Up</button></Link>
+              <Link to="/"><button onClick={() => {signUpBtn}} className="w-full p-2 bg-blue-600 text-white rounded-md ">Sign Up</button></Link>
             </div>
 
             <div className="flex justify-between mb-8">

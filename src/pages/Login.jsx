@@ -1,7 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useAuth } from './src/AuthContext';
 
 const Login = () => {
+
+  const {login} = useAuth();
+
+  const handleLogin = () => {
+    login()
+  }
+
   return (
     <>
       <div className="bg-kedua flex justify-center min-h-screen">
@@ -39,11 +47,12 @@ const Login = () => {
               <p className="text-sm">Forgot Password</p>
             </div>
             <div className="mb-8">
-              <Link to="/home">
-                <button className="w-full p-2 bg-blue-600 text-white rounded-md ">
-                  Login
+              <Link to="/">
+                <button onClick={handleLogin} className="w-full p-2 bg-blue-600 text-white rounded-md ">
+                    Login
                 </button>
               </Link>
+                
             </div>
 
             <div className="flex justify-between mb-8">

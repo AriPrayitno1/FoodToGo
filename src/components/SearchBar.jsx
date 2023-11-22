@@ -3,9 +3,9 @@ import React from 'react'
 const SearchBar = () => {
   return (
     <>
-      <div className='flex align-middle w-32 rounded-full py-2 px4'>
-        <img src="./src/assets/search.png" className='w-6'/>
-        <input type="text" placeholder='Cari makanan...' className='bg-white w-full'/>
+      <div className='bg-white text-black flex items-center w-72 gap-4 rounded-full py-2 px-4'>
+        <img src="./src/assets/search.png" className='w-4 h-4'/>
+        <input type="text" placeholder='Cari menu...' className='bg-transparent outline-none rounded-full w-full'/>
       </div>
     </>
     
