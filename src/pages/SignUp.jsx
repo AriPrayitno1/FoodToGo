@@ -1,11 +1,17 @@
 import React from 'react'
+import { useDispatch } from "react-redux";
+import { sliceAction } from "../Store";
 import { Link } from 'react-router-dom';
 
-const SignUp = () => {
 
-  const signUpBtn = () => {
-        <Link to="/"></Link>
-  }
+const SignUp = () => {
+  const dispatch = useDispatch();
+
+  const handleSignUp = () => {
+    // Dispatch action untuk pendaftaran
+    dispatch(sliceAction.SignUp());
+  };
+  
 
   return (
     <>
@@ -22,7 +28,7 @@ const SignUp = () => {
                 <input type="text" placeholder="Nama Depan" className="bg-white mb-4 border-solid border-2 
                 border-gray-300 p-2 rounded-md"/>
 
-                <input type="password" placeholder="Nama Belakang" className="bg-white mb-4 border-solid border-2 
+                <input type="text" placeholder="Nama Belakang" className="bg-white mb-4 border-solid border-2 
                 border-gray-300 p-2 rounded-md"/>
               </div>
               <input type="text" placeholder="Alamat Email" className="bg-white mb-4 border-solid border-2 
@@ -50,7 +56,7 @@ const SignUp = () => {
 
 
             <div className="mb-8">
-              <Link to="/"><button onClick={() => {signUpBtn}} className="w-full p-2 bg-blue-600 text-white rounded-md ">Sign Up</button></Link>
+              <Link to="/"><button onClick={() => {handleSignUp}} className="w-full p-2 bg-blue-600 text-white rounded-md ">Sign Up</button></Link>
             </div>
 
             <div className="flex justify-between mb-8">

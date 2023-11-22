@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useAuth } from './src/AuthContext';
+import { useDispatch } from "react-redux";
+import { sliceAction } from "../Store";
 
 const Login = () => {
+  const dispatch = useDispatch();
 
-  const {login} = useAuth();
-
-  const handleLogin = () => {
-    login()
-  }
+  const Handle = () => {
+    dispatch(sliceAction.Login());
+  };
 
   return (
     <>
@@ -48,11 +48,12 @@ const Login = () => {
             </div>
             <div className="mb-8">
               <Link to="/">
-                <button onClick={handleLogin} className="w-full p-2 bg-blue-600 text-white rounded-md ">
-                    Login
+                <button
+                  className="w-full p-2 bg-blue-600 text-white rounded-md "
+                  onClick={Handle}>
+                  Login
                 </button>
               </Link>
-                
             </div>
 
             <div className="flex justify-between mb-8">
