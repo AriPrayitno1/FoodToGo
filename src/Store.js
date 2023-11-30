@@ -1,9 +1,6 @@
 import { createSlice, configureStore } from "@reduxjs/toolkit";
 
-const initialState = { 
-  isLogin: false,
-  isSignedUp: false
-};
+const initialState = { isLogin: false };
 
 const loginSlice = createSlice({
   name: "slice1",
@@ -12,9 +9,6 @@ const loginSlice = createSlice({
     Login(state) {
       state.isLogin = !state.isLogin;
     },
-    SignUp(state) {
-      state.isSignedUp = !state.isSignedUp;
-    }
   },
 });
 
