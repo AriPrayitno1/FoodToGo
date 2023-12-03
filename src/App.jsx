@@ -14,6 +14,7 @@ import Menu from "./pages/Menu";
 import Profile from "./pages/Profile";
 import Address from "./pages/Address"
 import Payment from "./pages/Payment";
+import ProfilToko from "./pages/ProfilToko";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             </Route>
             <Route path="/bantuan" element={<Bantuan />}></Route>
             <Route path="/bantuanscs" element={<BantuanScs />}></Route>
+            <Route path="/profiltoko" element={<ProfilToko />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/signup" element={<SignUp />}></Route>
             <Route path="/profile" element={<Profile />}></Route>

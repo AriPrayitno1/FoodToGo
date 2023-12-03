@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { sliceAction } from "../Store";
-import signupImg from "../assets/signup.png"
-import coloredLogo from "../assets/colored_logo.png"
+import signupImg from "../../public/assets/signup.png"
+import coloredLogo from "../../public/assets/colored_logo.png"
 
 const SignUp = () => {
   const dispatch = useDispatch();
@@ -64,11 +64,11 @@ const SignUp = () => {
 
             <div className="flex justify-between mb-4">
               <button className="flex align-middle shadow-lg py-2 px-4 text-sm">
-                <img src="./src/assets/google.png" className="w-6 h-6 mr-2" />
+                <img src="../../public/assets/google.png" className="w-6 h-6 mr-2" />
                 Sign Up with Google
               </button>
               <button className="flex align-middle shadow-lg py-2 px-4 text-sm">
-                <img src="./src/assets/fb.png" className="w-6 h-6 mr-2" />
+                <img src="../../public/assets/fb.png" className="w-6 h-6 mr-2" />
                 Sign Up with Facebook
               </button>
             </div>

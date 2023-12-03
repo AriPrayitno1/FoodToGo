@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
-import menu from "../assets/menu/all_menu";
+import menu from "../../public/assets/menu/all_menu";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import HelpBtn from "../components/HelpBtn";
@@ -9,7 +9,7 @@ const Keranjang = () => {
   return (
     <>
       <div className="bg-kedua">
-        <Banner bannerImg="./src/assets/banner/favorite.png"></Banner>
+        <Banner bannerImg="../../public/assets/banner/favorite.png"></Banner>
         <div className="px-20 py-12">
           <h1 className="text-white text-4xl text-center font-bold absolute top-36 inset-x-1/3 z-20">
             Keranjang

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import logo from '../assets/logo.png'
-import profile from '../assets/icon-profile.png'
+import logo from '../../public/assets/logo.png'
+import profile from '../../public/assets/icon-profile.png'
 import LoginBtn from '../components/LoginBtn'
 
 const Navbar = () => {
