@@ -1,17 +1,17 @@
 import React, { useContext } from 'react'
-import rating from '../assets/rating.png'
-import pinLoc from '../assets/pin-location.png'
-import nutrition from '../assets/nutrition.png'
-import mitra from '../assets/mitra.png'
+import rating from '../../public/assets/rating.png'
+import pinLoc from '../../public/assets/pin-location.png'
+import nutrition from '../../public/assets/nutrition.png'
+import mitra from '../../public/assets/mitra.png'
 import Ingredients from '../components/Ingredients'
 import { Link } from 'react-router-dom'
-import data_ingredients from "../assets/ingredients/data_ingredients"
+import data_ingredients from "../../public/assets/ingredients/data_ingredients"
 import { ShopContext } from '../Context/ShopContext'
 
 const MenuDetail = (props) => {
 
   const {menu} = props
-  const {addToCart} = useContext(ShopContext)
+  // const {addToCart} = useContext(ShopContext)
 
   return (
     <>
@@ -79,9 +79,11 @@ const MenuDetail = (props) => {
           <div className="flex items-center mb-6">
             <img src={mitra} className="w-12 mr-2" />
             <h1 className="font-bold text-base mr-6">Bunda Berkah</h1>
-            <button className="btn btn-sm btn-outline text-black">
-              See Store
-            </button>
+            <Link to="/profiletoko">
+              <button className="btn btn-sm btn-outline text-black">
+                Lihat Toko
+              </button>
+            </Link>
           </div>
 
           <div className="flex gap-2 mb-6">

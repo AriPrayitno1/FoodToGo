@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from "../components/Footer";
 import HelpBtn from "../components/HelpBtn";
-import profile from "../assets/profile-img.png"
+import profile from "../../public/assets/profile-img.png"
 
 const Profile = () => {
   return (
@@ -17,15 +17,15 @@ const Profile = () => {
               
               <ul> 
                 <li className='flex items-center p-8 gap-4 hover:bg-slate-200 duration-300'>
-                  <img src="./src/assets/edit-profile.png" className='w-8'/>
+                  <img src="../../public/assets/edit-profile.png" className='w-8'/>
                   <h1>Edit Profile</h1>
                 </li>
                 <li className='flex items-center p-8 gap-4 hover:bg-slate-200 duration-300'>
-                  <img src="./src/assets/notification.png" className='w-8'/>
+                  <img src="../../public/assets/notification.png" className='w-8'/>
                   <h1>Notifikasi</h1>
                 </li>
                 <li className='flex items-center p-8 gap-4 hover:bg-slate-200 duration-300'>
-                  <img src="./src/assets/histori.png" className='w-8'/>
+                  <img src="../../public/assets/histori.png" className='w-8'/>
                   <h1>Histori</h1>
                 </li>
               </ul>

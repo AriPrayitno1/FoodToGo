@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "../components/Banner";
 import DisplayCard from "../components/DisplayCard";
-import display from "../assets/menu/display"
+import display from "../../public/assets/menu/display"
 import Footer from "../components/Footer";
 import HelpBtn from "../components/HelpBtn";
 
@@ -9,7 +9,7 @@ const ListMenu = () => {
   return (
     <>
       <div className="bg-kedua">
-        <Banner bannerImg="./src/assets/banner/home.png"></Banner>
+        <Banner bannerImg="../../public/assets/banner/home.png"></Banner>
         <div className="px-20 py-12">
           <h1 className="text-white text-4xl text-center font-bold absolute top-36 inset-x-1/3 z-20">
             List Menu

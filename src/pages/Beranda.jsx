@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "../components/Banner";
 import DisplayCard from "../components/DisplayCard";
-import display from "../assets/menu/display"
+import display from "../../public/assets/menu/display"
 import Footer from "../components/Footer";
 import HelpBtn from "../components/HelpBtn";
 import { Link } from "react-router-dom";
@@ -10,7 +10,7 @@ const Beranda = () => {
   return (
     <>
       <div className="bg-kedua">
-        <Banner bannerImg="./src/assets/banner/home.png"></Banner>
+        <Banner bannerImg="../../public/assets/banner/home.png"></Banner>
         <div className="px-20 py-12">
           <div className="mb-12">
             <h1 className="text-white text-4xl text-center font-bold absolute top-36 inset-x-1/3 z-20">
@@ -21,7 +21,11 @@ const Beranda = () => {
             </h1>
             <div className="grid grid-cols-4 gap-y-8 justify-items-center pt-12">
               {display.map((displayCard, i) => {
-                return <DisplayCard key={i} id={displayCard.id} name={displayCard.name} image={displayCard.image} mitra={displayCard.mitra} price={displayCard.price}/>
+                return <DisplayCard 
+                key={i} 
+                id={displayCard.id} 
+                name={displayCard.name} 
+                image={displayCard.image} />
               })}
             </div>
 
@@ -29,7 +33,7 @@ const Beranda = () => {
               <Link to="/menu" className="font-bold">
                 Lihat Semua
               </Link>
-              <img src="./src/assets/right-arrow.png" />
+              <img src="../../public/assets/right-arrow.png" />
             </div>
           </div>
 
@@ -44,7 +48,7 @@ const Beranda = () => {
             </div>
 
             <div className="flex justify-end items-center">
-              <img className="w-3/4" src="./src/assets/about-us.png" />
+              <img className="w-3/4" src="../../public/assets/about-us.png" />
             </div>
           </div>
 

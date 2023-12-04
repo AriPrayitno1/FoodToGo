@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import rating from '../assets/rating.png'
+import rating from '../../public/assets/rating.png'
 
 const Card = (props) => {
   return (
@@ -13,8 +13,6 @@ const Card = (props) => {
 
           <div className='flex justify-between items-center'>
             <h1 className='font-bold'>Rp {props.price}.000</h1>
-            <button className='bg-utama rounded-full p-2'>
-              <img src="./src/assets/heart.png" className='w-6'/></button>
           </div>
       </Link>
     </div>

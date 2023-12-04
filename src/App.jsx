@@ -5,7 +5,11 @@ import Navbar from "./components/Navbar";
 import CariMenu from "./pages/CariMenu";
 import Beranda from "./pages/Beranda";
 import Login from "./pages/Login";
-import SignUp from "./pages/SignUp";
+import LoginMitra from "./pages/LoginMitra";
+import PilihanSignUp from "./pages/PilihanSignUp";
+import SignUpUser from "./pages/SignUpUser";
+import SignUpMitra from "./pages/SignUpMitra";
+import Otp from "./pages/Otp";
 import ListMenu from "./pages/ListMenu";
 import Bantuan from "./pages/Bantuan";
 import BantuanScs from "./pages/BantuanScs";
@@ -14,6 +18,14 @@ import Menu from "./pages/Menu";
 import Profile from "./pages/Profile";
 import Address from "./pages/Address"
 import Payment from "./pages/Payment";
+import ProfileToko from "./pages/ProfileToko";
+import ProfileMitra from "./pages/ProfileMitra";
+import PenilaianProduk from "./pages/PenilaianProduk";
+import Verif1 from "./pages/Verif1";
+import Verif2 from "./pages/Verif2";
+import Verif3 from "./pages/Verif3";
+import Verif4 from "./pages/Verif4";
+import VerifBerhasil from "./pages/VerifBerhasil";
 
 function App() {
   return (
@@ -30,11 +42,23 @@ function App() {
             </Route>
             <Route path="/bantuan" element={<Bantuan />}></Route>
             <Route path="/bantuanscs" element={<BantuanScs />}></Route>
+            <Route path="/profiletoko" element={<ProfileToko />}></Route>
+            <Route path="/profilemitra" element={<ProfileMitra />}></Route>
+            <Route path="/rating" element={<PenilaianProduk />}></Route>
             <Route path="/login" element={<Login />}></Route>
-            <Route path="/signup" element={<SignUp />}></Route>
+            <Route path="/loginMitra" element={<LoginMitra />}></Route>
+            <Route path="/pilihansignup" element={<PilihanSignUp />}></Route>
+            <Route path="/signupUser" element={<SignUpUser />}></Route>
+            <Route path="/signupMitra" element={<SignUpMitra />}></Route>
+            <Route path="/otp" element={<Otp />}></Route>
             <Route path="/profile" element={<Profile />}></Route>
             <Route path="/address" element={<Address />}></Route>
             <Route path="/payment" element={<Payment />}></Route>
+            <Route path="/verif1" element={<Verif1 />}></Route>
+            <Route path="/verif2" element={<Verif2 />}></Route>
+            <Route path="/verif3" element={<Verif3 />}></Route>
+            <Route path="/verif4" element={<Verif4 />}></Route>
+            <Route path="/verifberhasil" element={<VerifBerhasil />}></Route>
           </Routes>
       </Router>
     </>

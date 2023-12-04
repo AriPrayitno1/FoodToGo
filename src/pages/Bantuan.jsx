@@ -1,12 +1,10 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
 
 const Bantuan = () => {
   return (
     <>
-      <Navbar></Navbar>
       <div className="bg-kedua">
         <div className='px-20 py-12'>
           <div className='bg-white text-black p-4 text-xl font-bold flex justify-center'>

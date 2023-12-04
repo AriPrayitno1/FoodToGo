@@ -15,7 +15,7 @@ const Payment = () => {
             <div className="flex justify-between mb-8">
               <div className="flex gap-2 p-2 border-solid border-2 h-12 rounded-xl border-black w-56">
                 <input type="radio" name="payment" id="cod" />
-                <img src="./src/assets/cod.png" className="w-6" />
+                <img src="../../public/assets/cod.png" className="w-6" />
                 <label htmlFor="cod" className="font-bold">
                   Cash On Delivery
                 </label>
@@ -24,46 +24,46 @@ const Payment = () => {
               {/* CREDIT CARD PAYMENT */}
               <div className="border-solid border-2 rounded-xl border-black p-4">
                 <div className="flex gap-2 mb-2 items-center">
-                  <img src="./src/assets/credit-card.png" className="w-8" />
+                  <img src="../../public/assets/credit-card.png" className="w-8" />
                   <h1 className="font-bold">Credit Card</h1>
                 </div>
 
                 <div className="flex gap-2 p-2 mb-2 border-solid border-2 rounded-xl border-black w-56">
                   <input type="radio" name="payment" id="bri" />
-                  <img src="./src/assets/bri.png" className="w-20" />
+                  <img src="../../public/assets/bri.png" className="w-20" />
                 </div>
 
                 <div className="flex gap-2 p-2 mb-2 border-solid border-2 rounded-xl border-black w-56">
                   <input type="radio" name="payment" id="mandiri" />
-                  <img src="./src/assets/mandiri.png" className="w-20" />
+                  <img src="../../public/assets/mandiri.png" className="w-20" />
                 </div>
 
                 <div className="flex gap-2 p-2 border-solid border-2 rounded-xl border-black w-56">
                   <input type="radio" name="payment" id="bca" />
-                  <img src="./src/assets/bca.png" className="w-20" />
+                  <img src="../../public/assets/bca.png" className="w-20" />
                 </div>
               </div>
 
               {/* E-WALLET PAYMENT */}
               <div className="border-solid border-2 rounded-xl border-black p-4">
                 <div className="flex gap-2 mb-2">
-                  <img src="./src/assets/e-wallet.png" />
+                  <img src="../../public/assets/e-wallet.png" />
                   <h1 className="font-bold">E-Wallet</h1>
                 </div>
 
                 <div className="flex gap-2 p-2 mb-2 border-solid border-2 rounded-xl border-black w-56">
                   <input type="radio" name="payment" id="dana" />
-                  <img src="./src/assets/dana.png" className="w-20" />
+                  <img src="../../public/assets/dana.png" className="w-20" />
                 </div>
 
                 <div className="flex gap-2 p-2 mb-2 border-solid border-2 rounded-xl border-black w-56">
                   <input type="radio" name="payment" id="ovo" />
-                  <img src="./src/assets/ovo.png" className="w-20" />
+                  <img src="../../public/assets/ovo.png" className="w-20" />
                 </div>
 
                 <div className="flex gap-2 p-2 border-solid border-2 rounded-xl border-black w-56">
                   <input type="radio" name="payment" id="spay" />
-                  <img src="./src/assets/spay.png" className="w-16" />
+                  <img src="../../public/assets/spay.png" className="w-16" />
                 </div>
               </div>
             </div>
