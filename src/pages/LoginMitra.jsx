@@ -1,23 +1,23 @@
-import React from "react";
+import React from 'react'
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { userAction } from "../Store";
-import loginImg from "../../public/assets/login.png";
+import { mitraAction } from "../Store";
+import loginImg from "../../public/assets/signup-mitra.png";
 import coloredLogo from "../../public/assets/colored_logo.png";
 
-const Login = () => {
+const LoginMitra = () => {
   const dispatch = useDispatch();
 
-  const HandleUser = () => {
-    dispatch(userAction.Login());
+  const Handle = () => {
+    dispatch(mitraAction.Login());
   };
 
   return (
-    <>
+    <div>
       <div className="bg-kedua flex justify-center min-h-screen">
         <div className="flex bg-white w-3/5 h-3/4 mt-16 text-black">
-          <div className="basis-2/5">
-            <img src={loginImg} className="h-full" />
+          <div className="flex justify-center items-center basis-2/5">
+            <img src={loginImg} className="h-40" />
           </div>
 
           <div className="flex-col basis-3/5 p-6">
@@ -46,7 +46,7 @@ const Login = () => {
               <Link to="/">
                 <button
                   className="w-full p-1 text-lg bg-blue-600 text-white rounded-md "
-                  onClick={HandleUser}
+                  onClick={Handle}
                 >
                   Login
                 </button>
@@ -66,15 +66,15 @@ const Login = () => {
 
             <p className="text-sm">
               Belum punya akun?{" "}
-              <Link to="/pilihansignup" className="text-red-700 font-bold">
+              <Link to="/signupMitra" className="text-red-700 font-bold">
                 Sign Up
               </Link>
             </p>
           </div>
         </div>
       </div>
-    </>
-  );
-};
+    </div>
+  )
+}
 
-export default Login;
+export default LoginMitra

@@ -79,7 +79,7 @@ const MenuDetail = (props) => {
           <div className="flex items-center mb-6">
             <img src={mitra} className="w-12 mr-2" />
             <h1 className="font-bold text-base mr-6">Bunda Berkah</h1>
-            <Link to="/profiltoko">
+            <Link to="/profiletoko">
               <button className="btn btn-sm btn-outline text-black">
                 Lihat Toko
               </button>

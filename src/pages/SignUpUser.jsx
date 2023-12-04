@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { sliceAction } from "../Store";
+import { userAction } from "../Store";
 import signupImg from "../../public/assets/signup.png"
 import coloredLogo from "../../public/assets/colored_logo.png"
 
-const SignUp = () => {
+const SignUpUser = () => {
   const dispatch = useDispatch();
 
   const Handle = () => {
-    dispatch(sliceAction.Login());
+    dispatch(userAction.Login());
   };
 
   return (
@@ -83,4 +83,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default SignUpUser;
