@@ -21,6 +21,11 @@ import Payment from "./pages/Payment";
 import ProfileToko from "./pages/ProfileToko";
 import ProfileMitra from "./pages/ProfileMitra";
 import PenilaianProduk from "./pages/PenilaianProduk";
+import Verif1 from "./pages/Verif1";
+import Verif2 from "./pages/Verif2";
+import Verif3 from "./pages/Verif3";
+import Verif4 from "./pages/Verif4";
+import VerifBerhasil from "./pages/VerifBerhasil";
 
 function App() {
   return (
@@ -49,6 +54,11 @@ function App() {
             <Route path="/profile" element={<Profile />}></Route>
             <Route path="/address" element={<Address />}></Route>
             <Route path="/payment" element={<Payment />}></Route>
+            <Route path="/verif1" element={<Verif1 />}></Route>
+            <Route path="/verif2" element={<Verif2 />}></Route>
+            <Route path="/verif3" element={<Verif3 />}></Route>
+            <Route path="/verif4" element={<Verif4 />}></Route>
+            <Route path="/verifberhasil" element={<VerifBerhasil />}></Route>
           </Routes>
       </Router>
     </>
