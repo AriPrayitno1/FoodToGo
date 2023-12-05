@@ -68,8 +68,7 @@ const Navbar = () => {
             className="cursor-pointer"
             onClick={() => {
               setMenu("keranjang");
-            }}
-          >
+            }}>
             Keranjang{" "}
             {menu === "keranjang" ? (
               <hr className="h-1 bg-white border-0 rounded md:my-2" />
@@ -79,21 +78,22 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {isUserLogin || isMitraLogin ? (
-          <div className="w-12 cursor-pointer">
-            <Link
-              to={isUserLogin ? "/profile" : "/profilemitra"}
-              onClick={() => {
-                setMenu(isUserLogin ? "profile" : "profileMitra");
-              }}
-            >
-              <img src={profile} alt="Profile" />
-              {menu === (isUserLogin ? "profile" : "profileMitra") ? (
-                <></>
-              ) : (
-                <></>
-              )}
-            </Link>
+        {(isUserLogin || isMitraLogin) ? (
+          <div className="flex items-center">
+            {isMitraLogin && (
+              <Link to="/notifikasi">
+                <div className="w-12 cursor-pointer mr-4">
+                  <img src="../../public/assets/bell.png" alt="Notifikasi" />
+                </div>
+              </Link>
+            )}
+
+            <div className="w-12 cursor-pointer" onClick={() => { setMenu(isUserLogin ? "profile" : "profileMitra") }}>
+              <Link to={isUserLogin ? "/profile" : "/lengkapidata"}>
+                <img src={profile} alt="Profile" />
+                {menu === (isUserLogin ? "profile" : "profileMitra") ? <></> : <></>}
+              </Link>
+            </div>
           </div>
         ) : (
           <Link to="/Login">

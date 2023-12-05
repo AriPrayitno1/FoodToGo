@@ -87,16 +87,10 @@ const MenuDetail = (props) => {
           </div>
 
           <div className="flex gap-2 mb-6">
-            <button
-              onClick={() => {
-                addToCart(menu.id);
-              }}
-              className="btn btn-sm btn-outline rounded-none text-black"
-            >
-              Tambahkan ke Keranjang
+            <button className='btn btn-sm btn-outline text-black'>Tambahkan ke Keranjang
             </button>
-            <Link to="/address">
-              <button className="btn btn-sm btn-outline rounded-none text-white bg-utama">
+            <Link to="/cart">
+              <button className="btn btn-sm btn-outline text-white bg-utama">
                 Beli Sekarang
               </button>
             </Link>

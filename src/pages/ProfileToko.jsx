@@ -11,11 +11,9 @@ const ProfilToko = () => {
   return (
     <>
       <div className="bg-kedua px-20 py-12">
-        
-<BioToko>
 
-</BioToko>
-       
+        <BioToko></BioToko>
+
         <div className="grid grid-cols-4 gap-y-8 justify-items-center pt-12">
           {display.slice(0, 4).map((Rating, i) => {
             return (

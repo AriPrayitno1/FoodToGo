@@ -9,9 +9,9 @@ const VerifBerhasil = () => {
             <div className='bg-white text-black p-8 font-bold flex flex-col items-center gap-8'>
               <img src="../../public/assets/checklist.png" className='w-20'/>
               <h1 className='text-2xl'>Pndaftaran anda telah kami proses</h1>
-              <Link to='/'>
+              <Link to='/profilemitra'>
                 <button className='text-sm bg-blue-400 text-white rounded-md w-48 py-2 '>
-                  Kembali ke Beranda
+                  Lihat Profile Anda
                 </button>
               </Link>
             </div>

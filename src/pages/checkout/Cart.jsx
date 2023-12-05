@@ -1,22 +1,17 @@
-import React from "react";
-import Card from "../components/Card";
-import menu from "../../public/assets/menu/all_menu";
-import Footer from "../components/Footer";
-import Banner from "../components/Banner";
-import HelpBtn from "../components/HelpBtn";
-import { Link } from "react-router-dom";
+import React from 'react'
+import HelpBtn from "../../components/HelpBtn";
+import { Link } from 'react-router-dom'
 
-const Keranjang = () => {
+const Cart = () => {
   return (
     <>
-      <div className="bg-kedua">
-        <Banner bannerImg="../../public/assets/banner/favorite.png"></Banner>
-        <div className="px-20 py-12">
-          <h1 className="text-white text-4xl text-center font-bold absolute top-36 inset-x-1/3 z-20">
-            Keranjang
-          </h1>
+      <div className="bg-kedua min-h-screen px-20 py-12">
+        <div className="text-black">
+          <div className="flex justify-center mb-4">
+            <h1 className="text-2xl font-bold">Keranjang</h1>
+          </div>
 
-          <div className="w-full text-black rounded-sm px-24 py-8">
+          <div className="bg-white w-full rounded-sm px-24 py-8">
             <div className='grid grid-cols-5'>
               <p>Produk</p>
               <p>Nama</p>
@@ -41,16 +36,14 @@ const Keranjang = () => {
               </Link>
             </div>
           </div>
+        </div>
 
-          <div className="flex justify-end">
-            <HelpBtn></HelpBtn>
-          </div>
+        <div className="flex justify-end">
+          <HelpBtn></HelpBtn>
         </div>
       </div>
-
-      <Footer></Footer>
     </>
-  );
-};
+  )
+}
 
-export default Keranjang;
+export default Cart
