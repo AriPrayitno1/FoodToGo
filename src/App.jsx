@@ -51,10 +51,14 @@ function App() {
           <Route path="/profiletoko" element={<ProfileToko />}></Route>
           <Route path="/lengkapidata" element={<LengkapiData />}></Route>
           <Route path="/rating" element={<PenilaianProduk />}></Route>
-          <Route path="/login" element={<Login />}></Route>
           <Route path="/loginMitra" element={<LoginMitra />}></Route>
           <Route path="/pilihansignup" element={<PilihanSignUp />}></Route>
+          
+        
           <Route path="/signupUser" element={<SignUpUser />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          
+          
           <Route path="/signupMitra" element={<SignUpMitra />}></Route>
           <Route path="/otp" element={<Otp />}></Route>
           <Route path="/profile" element={<Profile />}></Route>
