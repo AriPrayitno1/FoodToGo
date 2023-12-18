@@ -1,4 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { userAction } from "../Store";
@@ -6,6 +8,30 @@ import signupImg from "../../public/assets/signup.png"
 import coloredLogo from "../../public/assets/colored_logo.png"
 
 const SignUpUser = () => {
+
+  // integrasi website
+  const [nama_depan, setNamaDepan] = useState('');
+  const [nama_belakang, setNamaBelakang] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [no_handphone, setNoHP] = useState('');
+  const history = useNavigate();
+
+  async function SignUpUser(e) {
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:8080/api/v1/users', {
+        nama_depan,
+        nama_belakang,
+        email,
+        password,
+        no_handphone
+      });
+      history.push('/');
+    } catch (error) {
+      console.log(error);
+    }
+  }
   const dispatch = useDispatch();
 
   const Handle = () => {
@@ -30,24 +56,34 @@ const SignUpUser = () => {
               <div className="flex justify-between">
                 <input type="text" placeholder="Nama Depan"
                   className="bg-white mb-4 border-solid border-2 
-                border-gray-300 p-1 rounded-md"/>
+                border-gray-300 p-1 rounded-md" value={nama_depan} onChange={(e)=>{
+                  setNamaDepan(e.target.value)
+                }}/>
 
                 <input type="text" placeholder="Nama Belakang"
                   className="bg-white mb-4 border-solid border-2 
-                border-gray-300 p-1 rounded-md"/>
+                border-gray-300 p-1 rounded-md"value={nama_belakang} onChange={(e)=>{
+                  setNamaBelakang(e.target.value)
+                }}/>
               </div>
 
               <input type="text" placeholder="Alamat Email"
                 className="bg-white mb-4 border-solid border-2 
-              border-gray-300 p-1 rounded-md"/>
+              border-gray-300 p-1 rounded-md" value={email} onChange={(e)=>{
+                setEmail(e.target.value)
+              }}/>
 
               <input type="text" placeholder="No Handphone"
                 className="bg-white mb-4 border-solid border-2 
-              border-gray-300 p-1 rounded-md"/>
+              border-gray-300 p-1 rounded-md"value={no_handphone} onChange={(e)=>{
+                setNoHP(e.target.value)
+              }}/>
 
               <input type="password" placeholder="Password"
                 className="bg-white mb-2 border-solid border-2 
-              border-gray-300 p-1 rounded-md"/>
+              border-gray-300 p-1 rounded-md"value={password} onChange={(e)=>{
+                setPassword(e.target.value)
+              }}/>
 
               <p className="text-xs">It must be a combination of minimum 8 letters, numbers, and symbols.</p>
             </div>
@@ -56,7 +92,7 @@ const SignUpUser = () => {
               <Link to="/">
                 <button
                   className="w-full p-1 text-lg bg-blue-600 text-white rounded-md "
-                  onClick={Handle}>
+                  onSubmit={SignUpUser}>
                   Sign Up
                 </button>
               </Link>
