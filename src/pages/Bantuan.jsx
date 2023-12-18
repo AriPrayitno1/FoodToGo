@@ -10,7 +10,7 @@ const Bantuan = () => {
           <div className='bg-white text-black p-4 text-xl font-bold flex justify-center'>
             <h1>Admin Support</h1>
           </div>
-            <form action="" className='py-6 px-24 bg-white text-black '>
+            <form name="bantuanForm" action="" className='py-6 px-24 bg-white text-black '>
               <h1 className='flex justify-center mb-6 text-lg'>Tinggalkan pesan anda di bawah ini dan akan kami hubungi secepatnya</h1>
 
               <h1 className='mb-2'>Nama:</h1>

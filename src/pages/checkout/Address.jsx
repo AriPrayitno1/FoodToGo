@@ -13,65 +13,67 @@ const Address = () => {
 
           <div className="bg-white w-full rounded-sm px-24 py-8">
             {/* ADDRESS FORM */}
-            <div className="grid grid-cols-3 gap-y-4 mb-8">
-              <div>
-                <h1>Nama</h1>
-                <input
-                  type="text"
-                  className="bg-white shadow-md p-2 outline-none rounded-md"
-                />
+           <form name="addressForm">
+              <div className="grid grid-cols-3 gap-y-4 mb-8">
+                <div>
+                  <h1>Nama</h1>
+                  <input
+                    type="text"
+                    className="bg-white shadow-md p-2 outline-none rounded-md"
+                  />
+                </div>
+                <div>
+                  <h1>Alamat</h1>
+                  <input
+                    type="text"
+                    className="bg-white shadow-md p-2 outline-none rounded-md"
+                  />
+                </div>
+                <div>
+                  <h1>Tanggal</h1>
+                  <input
+                    type="date"
+                    className="bg-white shadow-md p-2 outline-none rounded-md"
+                  />
+                </div>
+                <div>
+                  <h1>Email</h1>
+                  <input
+                    type="email"
+                    className="bg-white shadow-md p-2 outline-none rounded-md"
+                  />
+                </div>
+                <div>
+                  <h1>Kecamatan/Kelurahan</h1>
+                  <input
+                    type="text"
+                    className="bg-white shadow-md p-2 outline-none rounded-md"
+                  />
+                </div>
+                <div>
+                  <h1>Waktu</h1>
+                  <input
+                    type="time"
+                    className="bg-white shadow-md p-2 outline-none rounded-md"
+                  />
+                </div>
+                <div>
+                  <h1>No Hp</h1>
+                  <input
+                    type="tel"
+                    pattern="(62) [0-9] {12,15}"
+                    className="bg-white shadow-md p-2 outline-none rounded-md"
+                  />
+                </div>
+                <div>
+                  <h1>Kode Pos</h1>
+                  <input
+                    type="number"
+                    className="bg-white shadow-md p-2 outline-none rounded-md"
+                  />
+                </div>
               </div>
-              <div>
-                <h1>Alamat</h1>
-                <input
-                  type="text"
-                  className="bg-white shadow-md p-2 outline-none rounded-md"
-                />
-              </div>
-              <div>
-                <h1>Tanggal</h1>
-                <input
-                  type="date"
-                  className="bg-white shadow-md p-2 outline-none rounded-md"
-                />
-              </div>
-              <div>
-                <h1>Email</h1>
-                <input
-                  type="email"
-                  className="bg-white shadow-md p-2 outline-none rounded-md"
-                />
-              </div>
-              <div>
-                <h1>Kecamatan/Kelurahan</h1>
-                <input
-                  type="text"
-                  className="bg-white shadow-md p-2 outline-none rounded-md"
-                />
-              </div>
-              <div>
-                <h1>Waktu</h1>
-                <input
-                  type="time"
-                  className="bg-white shadow-md p-2 outline-none rounded-md"
-                />
-              </div>
-              <div>
-                <h1>No Hp</h1>
-                <input
-                  type="tel"
-                  pattern="(62) [0-9] {12,15}"
-                  className="bg-white shadow-md p-2 outline-none rounded-md"
-                />
-              </div>
-              <div>
-                <h1>Kode Pos</h1>
-                <input
-                  type="number"
-                  className="bg-white shadow-md p-2 outline-none rounded-md"
-                />
-              </div>
-            </div>
+           </form>
 
             <div className="flex justify-between">
               <Link to="/cart">

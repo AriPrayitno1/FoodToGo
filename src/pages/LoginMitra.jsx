@@ -26,32 +26,34 @@ const LoginMitra = () => {
               <img src={coloredLogo} className="w-24" />
             </div>
 
-            <div className="flex flex-col mb-4">
-              <input
-                type="text"
-                placeholder="Alamat Email"
-                className="bg-white mb-4 border-solid border-2 
-              border-gray-300 p-1 rounded-md"
-              />
+            <form name='loginFormMitra'>
+              <div className="flex flex-col mb-4">
+                <input
+                  type="text"
+                  placeholder="Alamat Email"
+                  className="bg-white mb-4 border-solid border-2 
+                border-gray-300 p-1 rounded-md"
+                />
 
-              <input
-                type="password"
-                placeholder="Password"
-                className="bg-white border-solid border-2 
-              border-gray-300 p-1 rounded-md"
-              />
-            </div>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  className="bg-white border-solid border-2 
+                border-gray-300 p-1 rounded-md"
+                />
+              </div>
 
-            <div className="mb-4">
-              <Link to="/">
-                <button
-                  className="w-full p-1 text-lg bg-blue-600 text-white rounded-md "
-                  onClick={Handle}
-                >
-                  Login
-                </button>
-              </Link>
-            </div>
+              <div className="mb-4">
+                <Link to="/">
+                  <button
+                    className="w-full p-1 text-lg bg-blue-600 text-white rounded-md "
+                    onClick={Handle}
+                  >
+                    Login
+                  </button>
+                </Link>
+              </div>
+            </form>
 
             <div className="flex justify-between mb-4">
               <button className="flex align-middle shadow-lg py-2 px-4 text-sm">

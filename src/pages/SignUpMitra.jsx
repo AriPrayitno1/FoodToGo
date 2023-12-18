@@ -21,34 +21,36 @@ const SignUpMitra = () => {
               <img src={coloredLogo} className="w-24"/>
             </div>
 
-            <div className="flex flex-col mb-4">
-                <input type="text" placeholder="Nama Toko"
+            <form name='signupFormMitra'>
+              <div className="flex flex-col mb-4">
+                  <input type="text" placeholder="Nama Toko"
+                    className="bg-white mb-4 border-solid border-2 
+                  border-gray-300 p-1 rounded-md"/>
+
+                <input type="text" placeholder="Alamat Email"
                   className="bg-white mb-4 border-solid border-2 
                 border-gray-300 p-1 rounded-md"/>
 
-              <input type="text" placeholder="Alamat Email"
-                className="bg-white mb-4 border-solid border-2 
-              border-gray-300 p-1 rounded-md"/>
+                <input type="text" placeholder="No Handphone"
+                  className="bg-white mb-4 border-solid border-2 
+                border-gray-300 p-1 rounded-md"/>
 
-              <input type="text" placeholder="No Handphone"
-                className="bg-white mb-4 border-solid border-2 
-              border-gray-300 p-1 rounded-md"/>
+                <input type="password" placeholder="Password"
+                  className="bg-white mb-2 border-solid border-2 
+                border-gray-300 p-1 rounded-md"/>
 
-              <input type="password" placeholder="Password"
-                className="bg-white mb-2 border-solid border-2 
-              border-gray-300 p-1 rounded-md"/>
+                <p className="text-xs">It must be a combination of minimum 8 letters, numbers, and symbols.</p>
+              </div>
 
-              <p className="text-xs">It must be a combination of minimum 8 letters, numbers, and symbols.</p>
-            </div>
-
-            <div className="mb-4">
-              <Link to="/otp">
-                <button
-                  className="w-full p-1 text-lg bg-blue-600 text-white rounded-md ">
-                  Sign Up
-                </button>
-              </Link>
-            </div>
+              <div className="mb-4">
+                <Link to="/otp">
+                  <button
+                    className="w-full p-1 text-lg bg-blue-600 text-white rounded-md ">
+                    Sign Up
+                  </button>
+                </Link>
+              </div>
+            </form>
 
             <div className="flex justify-between mb-4">
               <button className="flex align-middle shadow-lg py-2 px-4 text-sm">
