@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import BreadCrum from "./BreadCrum";
 import MenuDetail from "./MenuDetail";
 import { ShopContext } from "../Context/ShopContext";
-import Cart from "./checkout/Cart";
 
 const Menu = () => {
   const { all_menu } = useContext(ShopContext);
@@ -14,7 +13,6 @@ const Menu = () => {
     <>
       <BreadCrum menu={menu} />
       <MenuDetail menu={menu} />
-      <Cart menu={menu}></Cart>
     </>
   );
 };
