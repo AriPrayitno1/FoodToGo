@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from "../components/Footer";
 import HelpBtn from "../components/HelpBtn";
-import profile from "../../public/assets/profile-img.png"
+import profile from "../../public/assets/user-picture.png";
 import { Link } from 'react-router-dom';
 
 const Profile = () => {
@@ -12,7 +12,7 @@ const Profile = () => {
           <div className=' flex w-2/3 bg-white text-black font-bold mb-4'>
             <div className='flex flex-col basis-2/5'>
               <div className='flex items-center gap-2 p-6'>
-                <img src={profile} className='w-16'/>
+                <img src = {profile} className='w-16'/>
                 <h1>Julia Ningsih</h1>
               </div>
               
