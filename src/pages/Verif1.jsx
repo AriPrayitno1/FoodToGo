@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Verif1 = () => {
+  // const [file, setFile] = useState();
+
+  // const HandleChange = (e) => {
+  //     console.log(e.target.files);
+  //     setFile(URL.createObjectURL(e.target.files[0]));
+  // }
   return (
     <>
       <div className='bg-kedua text-black min-h-screen px-20 py-12'>
@@ -21,7 +27,7 @@ const Verif1 = () => {
                           <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
                           <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
                       </div>
-                      <input id="dropzone-file" type="file" class="hidden" />
+                      <input id="dropzone-file" type="file" class="hidden"/>
                   </label>
               </div> 
             </div> 

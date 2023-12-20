@@ -6,6 +6,9 @@ import menu5 from "../menu/ikan-fillet.png";
 import menu6 from "../menu/kentang-balado.png";
 import menu7 from "../menu/nasi-ayam-goreng.png";
 import menu8 from "../menu/udang-goreng.png";
+import menu9 from "../menu/cap-cay.png";
+import menu10 from "../menu/ayam-rujak.png";
+
 
 let all_menu = [
   {
@@ -63,6 +66,20 @@ let all_menu = [
     image: menu8,
     mitra: "By You Catering",
     price: 25.000,
+  },
+  {
+    id: 9,
+    name: "Cap Cay",
+    image: menu9,
+    mitra: "By You Catering",
+    price: 15.000,
+  },
+  {
+    id: 10,
+    name: "Ayam Rujak",
+    image: menu10,
+    mitra: "By You Catering",
+    price: 18.000,
   },
 ];
 

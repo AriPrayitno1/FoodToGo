@@ -6,7 +6,11 @@ import signupImg from "../../public/assets/signup-mitra.png"
 import coloredLogo from "../../public/assets/colored_logo.png"
 
 const SignUpMitra = () => {
+  const dispatch = useDispatch();
 
+  const HandleMitra = () => {
+    dispatch(mitraAction.Login());
+  };
   return (
     <div>
       <div className="bg-kedua flex justify-center min-h-screen">
@@ -43,9 +47,9 @@ const SignUpMitra = () => {
               </div>
 
               <div className="mb-4">
-                <Link to="/otp">
+                <Link to="/">
                   <button
-                    className="w-full p-1 text-lg bg-blue-600 text-white rounded-md ">
+                    className="w-full p-1 text-lg bg-blue-600 text-white rounded-md " onClick={HandleMitra}>
                     Sign Up
                   </button>
                 </Link>
