@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Card from "../components/Card";
 import all_menu from "../../public/assets/menu/all_menu";
 import Footer from "../components/Footer";
@@ -7,6 +7,17 @@ import SearchBar from "../components/SearchBar";
 import HelpBtn from "../components/HelpBtn";
 
 const CariMenu = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filteredMenu, setFilteredMenu] = useState(all_menu);
+
+  const handleSearchChange = (event) => {
+    const term = event.target.value.toLowerCase();
+    setSearchTerm(term);
+
+    const filteredData = all_menu.filter(card => card.name.toLowerCase().includes(term));
+    setFilteredMenu(filteredData);
+  };
+
   return (
     <>
       <div className="bg-kedua">
@@ -16,10 +27,10 @@ const CariMenu = () => {
             Cari Menu
           </h1>
           <div className="flex justify-center">
-            <SearchBar></SearchBar>
+            <SearchBar onChange={handleSearchChange} value={searchTerm}></SearchBar>
           </div>
           <div className="grid grid-cols-5 gap-x-8 gap-y-8 justify-items-center pt-12">
-            {all_menu.map((card, i) => {
+            {filteredMenu.map((card, i) => {
               return (
                 <Card
                   key={i}
